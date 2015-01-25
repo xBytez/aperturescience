@@ -6,8 +6,10 @@ This project has been made by @Rudench and adapted by @xBytez and hosted by @xBy
 
 * What's the license on this sofware?
 
-Please check LICENSE.md
+Creative Commons Attribution-ShareAlike 4.0 International
 
-* Will there be a Portal 2 version
+Check LICENSE.md or visit http://creativecommons.org/licenses/by-sa/4.0/
 
-Yes, in the portal2 branch there is a WIP, I don't have the UI quite done yet, feel free to submit pull requests!
+* Will there be a Portal 2/Want you gone version
+
+Yes, there is a WIP in the portal2 folder, I don't have the UI quite done yet, feel free to submit pull requests!

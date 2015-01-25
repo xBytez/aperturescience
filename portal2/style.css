@@ -1,0 +1,122 @@
+/*
+ * Creative Commons License
+ * Portal End Credits Web by TylaKitty, xBytez & Valve is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+ * Based on a work at xbytez.eu
+*/
+body {
+	color: yellow;
+	font-family:  monospace;
+	font-size: 9pt;
+	line-height: 1.60em;
+	background-color:#623400;
+	background: -moz-radial-gradient(53% 53%, #623400, #1e0c00 100%) no-repeat center center fixed;
+	background: -webkit-radial-gradient(53% 53%, #623400, #1e0c00 100%) no-repeat center center fixed;
+	background: -o-radial-gradient(53% 53%, #623400, #1e0c00 100%) no-repeat center center fixed;
+	background: -ms-radial-gradient(53% 53%, #623400, #1e0c00 100%) no-repeat center center fixed;
+	background: radial-gradient(100% 75%, #623400, #1e0c00 100%) no-repeat center center fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;
+}
+
+#container {
+	border-style: solid;
+}
+
+#lyrics {
+	position:absolute;
+	left:2em;
+	top:2em;
+	width: 30em;
+	font-size: 15pt;
+}
+
+#lyricstext {
+	position:absolute;
+	left:1em;
+	right:1em;
+	top:1em;
+	bottom:1em;
+	text-align: left;
+}
+
+#lyricsleft,#lyricsright {
+	position:absolute;
+	width:1em;
+	top:1.5em;
+	bottom:1.5em;
+	text-align: center;
+}
+#lyricsleft {
+	left:0em;
+}
+#lyricsright {
+	right:0em;
+}
+
+#lyricstop,#lyricsbottom {
+	position:absolute;
+	left:0em;
+	width:30em;
+	height:1em;
+	text-align: center;
+}
+
+#lyricstop {
+	top:0em;
+}
+#lyricsbottom {
+	bottom:0em;
+}
+
+#credits {
+	position:absolute;
+	left: 33em;
+	top:2em;
+	width:30em;
+	height:28em;
+	color: #1F0000;
+	font-size: 17px;
+	font-weight: bold;
+}
+#creditstext {
+	position:absolute;
+	left:2em;
+	right:1em;
+	top:1.3em;
+	bottom:1em;
+	text-align: left;
+	vertical-align: bottom;
+
+}
+
+#creditsleft,#creditsright {
+	position:absolute;
+	width:1em;
+	top:1.5em;
+	bottom:1.5em;
+	text-align: center;
+}
+#creditsleft {
+	left:0em;
+}
+#creditsright {
+	right:0em;
+}
+
+#creditstop,#creditsbottom {
+	position:absolute;
+	left:0em;
+	width:30em;
+	height:1em;
+	text-align: center;
+}
+
+#creditstop {
+	top:0em;
+}
+#creditsbottom {
+	bottom:0em;
+}
