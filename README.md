@@ -12,4 +12,4 @@ Check LICENSE.md or visit http://creativecommons.org/licenses/by-sa/4.0/
 
 * Will there be a Portal 2/Want you gone version
 
-Yes, there is a WIP in the portal2 folder, I don't have the UI quite done yet, feel free to submit pull requests!
+Yes, there is a WIP in the portal2 folder, I don't have the UI quite done yet, feel free to submit pull requests! (https://xbytez.eu/portal2)
