@@ -24,6 +24,7 @@ var cake = {
         if (cake.player.play) {
             cake.player.setAttribute('prebuffer', 'auto');
             cake.player.setAttribute('src', 'Still Alive.ogg');
+            cake.player.load();
             setTimeout("cake.player.play()", delay);
         }
     },
