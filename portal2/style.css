@@ -4,119 +4,119 @@
  * Based on a work at xbytez.eu
 */
 body {
-	color: yellow;
-	font-family:  monospace;
-	font-size: 9pt;
-	line-height: 1.60em;
-	background-color:#623400;
-	background: -moz-radial-gradient(53% 53%, #623400, #1e0c00 100%) no-repeat center center fixed;
-	background: -webkit-radial-gradient(53% 53%, #623400, #1e0c00 100%) no-repeat center center fixed;
-	background: -o-radial-gradient(53% 53%, #623400, #1e0c00 100%) no-repeat center center fixed;
-	background: -ms-radial-gradient(53% 53%, #623400, #1e0c00 100%) no-repeat center center fixed;
-	background: radial-gradient(100% 75%, #623400, #1e0c00 100%) no-repeat center center fixed;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	-ms-background-size: cover;
-	background-size: cover;
+    color: #967533;
+    font-family:  monospace;
+    font-size: 9pt;
+    line-height: 1.60em;
+    margin: 1em;
+    width: 1080px;
+    height: 720px;
+    position: relative;
+    background-color:#7e521d;
+    background: -moz-radial-gradient(53% 53%, #7e521d, #4a3219 100%) no-repeat center center fixed;
+    background: -webkit-radial-gradient(53% 53%, #7e521d, #4a3219 100%) no-repeat center center fixed;
+    background: -o-radial-gradient(53% 53%, #7e521d, #4a3219 100%) no-repeat center center fixed;
+    background: -ms-radial-gradient(53% 53%, #7e521d, #4a3219 100%) no-repeat center center fixed;
+    background: radial-gradient(100% 75%, #7e521d, #4a3219 100%) no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
 }
 
 #container {
-	border-style: solid;
+    position: absolute;
+    left: 2.5em;
+    right: 2.5em;
+    top: 2.5em;
+    bottom: 2.5em;
+    border: 2px solid;
+    border-radius: 1px;
 }
-
 #lyrics {
-	position:absolute;
-	left:2em;
-	top:2em;
-	width: 30em;
-	font-size: 15pt;
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    width: 30em;
+    font-size: 15pt;
+    line-height: 1.75;
 }
 
 #lyricstext {
-	position:absolute;
-	left:1em;
-	right:1em;
-	top:1em;
-	bottom:1em;
-	text-align: left;
-}
-
-#lyricsleft,#lyricsright {
-	position:absolute;
-	width:1em;
-	top:1.5em;
-	bottom:1.5em;
-	text-align: center;
-}
-#lyricsleft {
-	left:0em;
-}
-#lyricsright {
-	right:0em;
-}
-
-#lyricstop,#lyricsbottom {
-	position:absolute;
-	left:0em;
-	width:30em;
-	height:1em;
-	text-align: center;
-}
-
-#lyricstop {
-	top:0em;
-}
-#lyricsbottom {
-	bottom:0em;
+    position:absolute;
+    left:1em;
+    right:1em;
+    top:1em;
+    bottom:1em;
+    text-align: left;
 }
 
 #credits {
-	position:absolute;
-	left: 33em;
-	top:2em;
-	width:30em;
-	height:28em;
-	color: #1F0000;
-	font-size: 17px;
-	font-weight: bold;
+    position: absolute;
+    left: 20em;
+    top: 5em;
+    width: 30em;
+    color: #1F0000;
+    font-size: 20px;
+    font-weight: bold;
 }
 #creditstext {
-	position:absolute;
-	left:2em;
-	right:1em;
-	top:1.3em;
-	bottom:1em;
-	text-align: left;
-	vertical-align: bottom;
-
+    position:absolute;
+    left:2em;
+    right:1em;
+    top:1.3em;
+    bottom:1em;
+    text-align: right;
+    vertical-align: bottom;
+    line-height: 1.75;
+}
+#ui {
+    position: absolute;
+    right: 1em;
+}
+#ui > div {
+    border: 2px solid;
+    display: inline-block;
+    font-size: 18px;
+    transform: translateY(-.5em);
+    background-color: #4a3219;
+    vertical-align: top;
+    height: 100px;
+    box-sizing: border-box;
+    line-height: 1.2;
+}
+#uiright {
+    width: 100px;
+    padding: 7px;
+}
+#uimiddle {
+    padding: 2px;
+}
+#uileft {
+    width: 200px;
+    padding: 2px;
+}
+#logo {
+    width: 100%;
+    height: 100%;
 }
 
-#creditsleft,#creditsright {
-	position:absolute;
-	width:1em;
-	top:1.5em;
-	bottom:1.5em;
-	text-align: center;
+#uileft {
+    white-space: pre;
+    overflow: hidden;
 }
-#creditsleft {
-	left:0em;
+#uileft > div {
+    vertical-align: top;
+    line-height: 0.2;
+    font-size: 30px;
+    position: absolute;
 }
-#creditsright {
-	right:0em;
+#dotsleft {
+    left: 0;
+    top: -17px;
 }
-
-#creditstop,#creditsbottom {
-	position:absolute;
-	left:0em;
-	width:30em;
-	height:1em;
-	text-align: center;
-}
-
-#creditstop {
-	top:0em;
-}
-#creditsbottom {
-	bottom:0em;
+#dotsright {
+    right: 0;
+    top: -47px;
 }

@@ -9,7 +9,7 @@ var cake = {
 
     blinkerTime:0.3*1000,
 
-    maxCredits:15,
+    maxCredits:13,
 
     firstLyricsIndex:0,
     lastCreditsIndex:0,
@@ -18,9 +18,6 @@ var cake = {
     {
         cake.lyricsdiv=document.getElementById('lyricstext');
         cake.creditsdiv=document.getElementById('creditstext');
-
-        //cake.drawLyricsBorder();
-        //cake.drawCreditsBorder();
 
         cake.initCredits();
 
@@ -34,7 +31,6 @@ var cake = {
     },
     initMusicPlayer: function()
     {
-        var delay=0*1000;
         var delay = 0;
         cake.player=document.createElement('audio');
         if(cake.player.play)
@@ -43,57 +39,6 @@ var cake = {
             cake.player.setAttribute('src','Want You Gone.mp3');
             setTimeout("cake.player.play()",delay);
         }
-    },
-
-    drawLyricsBorder: function()
-    {
-        var verttext='';
-        for (x=0; x<30; x++)
-        {
-            verttext+='|<br />';
-        }
-        var horiztext='';
-        for (x=0; x<47; x++)
-        {
-            horiztext+='-';
-        }
-        var left=document.getElementById('lyricsleft');
-        left.innerHTML=verttext;
-
-        var top=document.getElementById('lyricstop');
-        top.innerHTML=horiztext;
-
-        var right=document.getElementById('lyricsright');
-        right.innerHTML=verttext;
-
-        var bottom=document.getElementById('lyricsbottom');
-        bottom.innerHTML=horiztext;
-
-    },
-    drawCreditsBorder: function()
-    {
-        var verttext='';
-        for (x=0; x<16; x++)
-        {
-            verttext+='|<br />';
-        }
-        var horiztext='';
-        for (x=0; x<47; x++)
-        {
-            horiztext+='-';
-        }
-
-        var left=document.getElementById('creditsleft');
-        left.innerHTML=verttext;
-
-        var top=document.getElementById('creditstop');
-        top.innerHTML=horiztext;
-
-        var right=document.getElementById('creditsright');
-        right.innerHTML=verttext;
-
-        var bottom=document.getElementById('creditsbottom');
-        bottom.innerHTML=horiztext;
     },
     initBlinker: function()
     {

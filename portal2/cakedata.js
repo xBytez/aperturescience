@@ -505,7 +505,7 @@ var lyrics=[
  {
   delay:"2.5",
   text:"",
-  nonewline:1,
+  nonewline:0,
   clear:0,
   },
  {
@@ -672,14 +672,14 @@ var lyrics=[
   },
  {
   delay:"0.88",
-  text:"You've got your ",
-  nonewline:1,
+  text:"You've got your",
+  nonewline:0,
   clear:0,
   },
  {
   delay:"1.25",
-  text:"short sad ",
-  nonewline:1,
+  text:"short sad",
+  nonewline:0,
   clear:0,
   },
  {
@@ -721,7 +721,7 @@ var lyrics=[
  {
   delay:"0.3",
   text:"",
-  nonewline:0,
+  nonewline:1,
   clear:0,
   },
  {
@@ -817,7 +817,7 @@ var lyrics=[
  {
   delay:"1.21",
   text:"",
-  nonewline:0,
+  nonewline:1,
   clear:0,
   },
  {
@@ -931,7 +931,7 @@ var lyrics=[
  {
   delay:"1.18",
   text:"",
-  nonewline:0,
+  nonewline:1,
   clear:0,
   },
  {
@@ -955,7 +955,7 @@ var lyrics=[
  {
   delay:"1.15",
   text:"",
-  nonewline:0,
+  nonewline:1,
   clear:0,
   },
  {
@@ -1011,8 +1011,53 @@ var lyrics=[
   },
  {
   delay:"1.16",
-  text:"gone ",
-  nonewline:0,
+  text:"gone",
+  nonewline:1,
   clear:0,
   }
 ];
+
+var dots = [
+".",
+" .....",
+" .....",
+" .....",
+"..",
+".   ..",
+". .",
+".... .",
+".. ...",
+"",
+". ..",
+". .",
+".. ...",
+"......",
+"..   .",
+" .",
+".    .",
+"......",
+" . ...",
+".    .",
+". ...",
+"  ...",
+" .",
+"  ..",
+" .....",
+"......",
+"  ...",
+"     .",
+"......",
+" .  ..",
+". ..",
+" . ...",
+"..  .",
+".... .",
+"......",
+".. ...",
+"  . .",
+"  .",
+". .",
+"  .",
+"  .",
+"  .."
+]
