@@ -119,7 +119,7 @@ body {
     vertical-align: top;
     height: 120px;
     box-sizing: border-box;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 #uiright {
     width: 120px;
@@ -127,6 +127,24 @@ body {
 }
 #uimiddle {
     padding: 2px;
+}
+#uimiddle::before {
+    content: "";
+    background-color: #957532;
+    position: absolute;
+    top: 0.4em;
+    left: -0.4em;
+    width: 0.4em;
+    height: 2px;
+}
+#uimiddle::after {
+    content: "";
+    background-color: #957532;
+    position: absolute;
+    top: 0.4em;
+    right: -0.4em;
+    width: 0.4em;
+    height: 2px;
 }
 #uileft {
     width: 240px;
