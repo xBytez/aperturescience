@@ -40,6 +40,10 @@ var cake = {
             setTimeout("cake.player.play()",delay);
         }
     },
+    setVolume: function(vol)
+    {
+        cake.player.volume = ~~vol / 100;
+    },
     initBlinker: function()
     {
         if (!cake.lyricsBlinker)
@@ -166,13 +170,11 @@ var cake = {
             delay+=lyrics[index]['delay']*cake.delayMultiplier;
         }
     },
-
     clearLyrics: function()
     {
         cake.lyricsdiv.innerHTML="";
         cake.lyricsdiv.appendChild(cake.lyricsBlinker);
     },
-
     initCredits: function()
     {
         for (var index=0-cake.maxCredits; index<0; index++)
