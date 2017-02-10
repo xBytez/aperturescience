@@ -10,6 +10,6 @@ Creative Commons Attribution-ShareAlike 4.0 International
 
 Check LICENSE.md or visit http://creativecommons.org/licenses/by-sa/4.0/
 
-* Will there be a Portal 2/Want you gone version
+* Will there be a Portal 2 / Want You Gone version?
 
-Yes, there is a WIP in the portal2 folder, I don't have the UI quite done yet, feel free to submit pull requests! (https://xbytez.eu/portal2)
+There already is! There almost-finished-WIP is in the portal2 folder, feel free to submit pull requests if you find any way to improve it!
