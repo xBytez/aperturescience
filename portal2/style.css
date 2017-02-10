@@ -1,21 +1,23 @@
 /*
  * Creative Commons License
- * Portal End Credits Web by TylaKitty, xBytez & Valve is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+ * Portal 2 End Credits Web by TylaKitty, xBytez, MatheusAvellar & Valve is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
  * Based on a work at xbytez.eu
-*/
+ */
 
 @-webkit-keyframes buffer {    0% {  top: -40%;  }    80%, 100% {  top: 140%;  }    }
    @-moz-keyframes buffer {    0% {  top: -40%;  }    80%, 100% {  top: 140%;  }    }
      @-o-keyframes buffer {    0% {  top: -40%;  }    80%, 100% {  top: 140%;  }    }
         @keyframes buffer {    0% {  top: -40%;  }    80%, 100% {  top: 140%;  }    }
-@-webkit-keyframes dots_down {    0% {  transform: translateY(-63%) scaleY(.5);  }    100% {  transform: translateY(-25.5%) scaleY(.5);  }    }
-   @-moz-keyframes dots_down {    0% {  transform: translateY(-63%) scaleY(.5);  }    100% {  transform: translateY(-25.5%) scaleY(.5);  }    }
-     @-o-keyframes dots_down {    0% {  transform: translateY(-63%) scaleY(.5);  }    100% {  transform: translateY(-25.5%) scaleY(.5);  }    }
-        @keyframes dots_down {    0% {  transform: translateY(-63%) scaleY(.5);  }    100% {  transform: translateY(-25.5%) scaleY(.5);  }    }
-@-webkit-keyframes dots_up {    0% {  transform: translateY(-25.5%) scaleY(.5);  }    100% {  transform: translateY(-63%) scaleY(.5);  }    }
-   @-moz-keyframes dots_up {    0% {  transform: translateY(-25.5%) scaleY(.5);  }    100% {  transform: translateY(-63%) scaleY(.5);  }    }
-     @-o-keyframes dots_up {    0% {  transform: translateY(-25.5%) scaleY(.5);  }    100% {  transform: translateY(-63%) scaleY(.5);  }    }
-        @keyframes dots_up {    0% {  transform: translateY(-25.5%) scaleY(.5);  }    100% {  transform: translateY(-63%) scaleY(.5);  }    }
+
+@-webkit-keyframes dots_down {    0% {  transform: translateY(-63%) scaleY(0.5);  }    100% {  transform: translateY(-25.5%) scaleY(0.5);  }    }
+   @-moz-keyframes dots_down {    0% {  transform: translateY(-63%) scaleY(0.5);  }    100% {  transform: translateY(-25.5%) scaleY(0.5);  }    }
+     @-o-keyframes dots_down {    0% {  transform: translateY(-63%) scaleY(0.5);  }    100% {  transform: translateY(-25.5%) scaleY(0.5);  }    }
+        @keyframes dots_down {    0% {  transform: translateY(-63%) scaleY(0.5);  }    100% {  transform: translateY(-25.5%) scaleY(0.5);  }    }
+
+@-webkit-keyframes dots_up {    0% {  transform: translateY(-25.5%) scaleY(0.5);  }    100% {  transform: translateY(-63%) scaleY(0.5);  }    }
+   @-moz-keyframes dots_up {    0% {  transform: translateY(-25.5%) scaleY(0.5);  }    100% {  transform: translateY(-63%) scaleY(0.5);  }    }
+     @-o-keyframes dots_up {    0% {  transform: translateY(-25.5%) scaleY(0.5);  }    100% {  transform: translateY(-63%) scaleY(0.5);  }    }
+        @keyframes dots_up {    0% {  transform: translateY(-25.5%) scaleY(0.5);  }    100% {  transform: translateY(-63%) scaleY(0.5);  }    }
 
 body {
     color: #967533;
@@ -170,18 +172,18 @@ body {
 #dotsleft {
     left: 0.25em;
     top: 0;
-    -webkit-animation: dots_down 2.5s linear 0s infinite normal running;
-       -moz-animation: dots_down 2.5s linear 0s infinite normal running;
-         -o-animation: dots_down 2.5s linear 0s infinite normal running;
-            animation: dots_down 2.5s linear 0s infinite normal running;
+    -webkit-animation: dots_down 2.5s linear 0s infinite normal;
+       -moz-animation: dots_down 2.5s linear 0s infinite normal;
+         -o-animation: dots_down 2.5s linear 0s infinite normal;
+            animation: dots_down 2.5s linear 0s infinite normal;
 }
 #dotsright {
     right: 0.25em;
     top: 0;
-    -webkit-animation: dots_up 2.5s linear 0s infinite normal running;
-       -moz-animation: dots_up 2.5s linear 0s infinite normal running;
-         -o-animation: dots_up 2.5s linear 0s infinite normal running;
-            animation: dots_up 2.5s linear 0s infinite normal running;
+    -webkit-animation: dots_up 2.5s linear 0s infinite normal;
+       -moz-animation: dots_up 2.5s linear 0s infinite normal;
+         -o-animation: dots_up 2.5s linear 0s infinite normal;
+            animation: dots_up 2.5s linear 0s infinite normal;
 }
 
 #volume {
@@ -203,8 +205,8 @@ body {
     background: linear-gradient(to bottom, rgba(126,82,29,0) 0%,rgba(126,82,29,0) 1%,rgba(126,82,29,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007e521d', endColorstr='#7e521d',GradientType=0 ); /* IE6-9 */
 
-    -webkit-animation: buffer 2s linear 1s infinite normal running;
-       -moz-animation: buffer 2s linear 1s infinite normal running;
-         -o-animation: buffer 2s linear 1s infinite normal running;
-            animation: buffer 2s linear 1s infinite normal running;
+    -webkit-animation: buffer 2s linear 1s infinite normal;
+       -moz-animation: buffer 2s linear 1s infinite normal;
+         -o-animation: buffer 2s linear 1s infinite normal;
+            animation: buffer 2s linear 1s infinite normal;
 }

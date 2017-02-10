@@ -1,6 +1,9 @@
-// Creative Commons License
-// Portal End Credits Web by TylaKitty/xBytez/Valve is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-// Based on a work at http://xbytez.eu/.
+/*
+ * Creative Commons License
+ * Portal 2 End Credits Web by TylaKitty, xBytez, MatheusAvellar & Valve is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+ * Based on a work at xbytez.eu
+ */
+
 var cake = {
     delayMultiplier: 1000,
 
@@ -29,6 +32,17 @@ var cake = {
         cake.processCreditLines();
 
     },
+    checkForIE: function()
+    {
+        var result = -1;
+        if (navigator.appName == "Microsoft Internet Explorer") {
+            var userAgent = navigator.userAgent;
+            var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+            if (re.exec(userAgent) != null)
+                result = parseFloat(RegExp.$1);
+        }
+        return result;
+    },
     initMusicPlayer: function()
     {
         cake.player = document.createElement("audio");
@@ -37,12 +51,21 @@ var cake = {
             cake.player.setAttribute("src", "Want You Gone.mp3");
             cake.player.addEventListener("canplaythrough", cake.init);
         } else {
-            console.error("Woops. Cake can't play.");
+            var ie = cake.checkForIE();
+            if (ie > -1 && ie < 9) {
+                cake.lyricsdiv = document.getElementById("lyricstext");
+                cake.lyricsdiv.innerText = "I'm sorry, this only works on IE9+ or better browsers";
+            } else {
+                console.error("Oddly enough, the audio cannot be played.");
+            }
         }
     },
     setVolume: function(vol)
     {
-        cake.player.volume = ~~vol / 100;
+        vol = ~~vol / 100;
+        if (cake.player && cake.player.volume !== void(0) && vol >= 0 && vol <= 1) {
+            cake.player.volume = vol;
+        }
     },
     initBlinker: function()
     {
@@ -241,4 +264,10 @@ var cake = {
     }
 }
 
-window.addEventListener("load", cake.initMusicPlayer, false);
+if (window.addEventListener){
+    window.addEventListener("load", cake.initMusicPlayer, false);
+} else if (window.attachEvent){
+    window.attachEvent("onload", cake.initMusicPlayer);
+} else {
+    console.error("Oh, dear god, what browser is this?\nFailed to set up event listener.");
+}

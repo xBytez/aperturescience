@@ -1,6 +1,8 @@
-// Creative Commons License
-// Portal End Credits Web by TylaKitty/xBytez/Valve is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-// Based on a work at http://xbytez.eu/.
+/*
+ * Creative Commons License
+ * Portal 2 End Credits Web by TylaKitty, xBytez, MatheusAvellar & Valve is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+ * Based on a work at xbytez.eu
+ */
 
 var credits=[
     ">LIST PERSONNEL:",
